@@ -41,8 +41,8 @@ class agent:
 
         button_login = driver.find_element_by_id("button_login")
 
-        username.send_keys("pc.support1")
-        password.send_keys("wph155alanYue")
+        username.send_keys("")
+        password.send_keys("")
 
         time.sleep(1)
 
@@ -172,7 +172,7 @@ class agent:
             try:
                 smtp.ehlo()  # 驗證SMTP伺服器
                 smtp.starttls()  # 建立加密傳輸
-                smtp.login("shingshing125@gmail.com", "krxtaqytivhizyfc")  # 登入寄件者gmail
+                smtp.login("shingshing125@gmail.com", "")  # 登入寄件者gmail
                 smtp.send_message(content)  # 寄送郵件
                 print("Complete!")
             except Exception as e:
